@@ -55,8 +55,6 @@ body {
     background-color: var(--primary-Very-dark-cyan);
 }
 
-.Preview-card__icon {}
-
 .Preview-card__title {
     margin-top: 32px;
     color: var(--neutral-Very-light-gray-background-headings-buttons);
@@ -92,4 +90,11 @@ body {
 
 .Preview-card:nth-child(3)>.Preview-card__btn {
     color: var(--primary-Very-dark-cyan);
+}
+
+.Preview-card>.Preview-card__btn:hover {
+    cursor: pointer;
+    color: var(--neutral-Transparent-white-paragraphs);
+    background-color: transparent;
+    border: 2px solid var(--neutral-Transparent-white-paragraphs);
 }
