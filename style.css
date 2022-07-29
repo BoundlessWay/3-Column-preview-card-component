@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root {
+    --primary-Bright-orange: hsl(31, 77%, 52%);
+    --primary-Dark-cyan: hsl(184, 100%, 22%);
+    --primary-Very-dark-cyan: hsl(179, 100%, 13%);
+    --neutral-Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --neutral-Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    height: 800px;
+    display: flex;
+    background-color: var(--neutral-Very-light-gray-background-headings-buttons);
+}
+
+.Three-column-preview-card {
+    margin: auto;
+    height: 500px;
+    width: 921px;
+    font-size: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Preview-card {
+    width: 307px;
+    height: 100%;
+    display: inline-block;
+    padding: 48px;
+    /* vertical-align: top; */
+}
+
+.Preview-card:nth-child(1) {
+    background-color: var(--primary-Bright-orange);
+}
+
+.Preview-card:nth-child(2) {
+    background-color: var(--primary-Dark-cyan);
+}
+
+.Preview-card:nth-child(3) {
+    background-color: var(--primary-Very-dark-cyan);
+}
+
+.Preview-card__icon {}
+
+.Preview-card__title {
+    margin-top: 32px;
+    color: var(--neutral-Very-light-gray-background-headings-buttons);
+    font-size: 3rem;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+.Preview-card__desc {
+    margin-top: 23px;
+    color: var(--neutral-Transparent-white-paragraphs);
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+.Preview-card__btn {
+    margin-top: 100px;
+    background: var(--neutral-Very-light-gray-background-headings-buttons);
+    height: 48px;
+    width: 146px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.Preview-card:nth-child(1)>.Preview-card__btn {
+    color: var(--primary-Bright-orange);
+}
+
+.Preview-card:nth-child(2)>.Preview-card__btn {
+    color: var(--primary-Dark-cyan);
+}
+
+.Preview-card:nth-child(3)>.Preview-card__btn {
+    color: var(--primary-Very-dark-cyan);
+}

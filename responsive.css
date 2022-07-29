@@ -1,0 +1,17 @@
+@media screen and (max-width: 940px) {
+    body {
+        height: 1502px;
+    }
+    .Three-column-preview-card {
+        width: 327px;
+        height: 1326px;
+    }
+    .Preview-card {
+        width: 100%;
+        height: 442px;
+        display: block;
+    }
+    .Preview-card__btn {
+        margin-top: 42px;
+    }
+}
